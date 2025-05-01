@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Nguyen - Resume</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.3in;
+            background-color: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #0056b3;
+            font-size: 22pt;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin: 5px 0;
+            font-size: 10pt;
+        }
+
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f8f9fa;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #0056b3;
+            font-size: 13pt;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #0056b3;
+            padding-bottom: 3px;
+        }
+
+        .sidebar h2 {
+            font-size: 12pt;
+            margin-top: 12px;
+        }
+
+        h3 {
+            font-size: 11pt;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        .job-title {
+            font-weight: bold;
+            display: block;
+        }
+
+        .company {
+            font-weight: bold;
+        }
+
+        .date-location {
+            font-style: italic;
+            color: #555;
+            font-size: 9pt;
+        }
+
+        ul {
+            margin-top: 3px;
+            margin-bottom: 12px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 10pt;
+        }
+
+        .section {
+            margin-bottom: 10px;
+        }
+
+        .position {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .skills-category {
+            margin-bottom: 10px;
+        }
+
+        .skills-category h3 {
+            margin-bottom: 3px;
+            font-size: 10pt;
+            color: #0056b3;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 3px;
+        }
+
+        .skills-list li {
+            margin-bottom: 2px;
+            font-size: 9pt;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .skills-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .activity {
+            margin-bottom: 8px;
+        }
+
+        .activity-title {
+            font-weight: bold;
+            display: block;
+        }
+
+        .activity-details {
+            padding-left: 10px;
+            margin-top: 2px;
+        }
+
+        .activity-details p {
+            margin: 1px 0;
+            font-size: 9pt;
+            position: relative;
+        }
+
+        .activity-details p:before {
+            content: "•";
+            position: absolute;
+            left: -10px;
+        }
+
+        .links {
+            margin-top: 8px;
+            font-size: 9pt;
+        }
+
+        .links p {
+            margin: 2px 0;
+        }
+
+        .links a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>THANH NGUYEN</h1>
+        <div class="links" style="margin-top:2px">
+            <a href="https://tanwinn.io">tanwinn.io</a> •
+            <a href="https://github.com/tanwinn">github.com/tanwinn</a> •
+            <a href="https://linkedin.com/in/tanwinn">linkedin.com/in/tanwinn</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="section">
+                <h2>EXPERIENCE</h2>
+
+                <div class="position">
+                    <div>
+                        <span class="company">GOOGLE CLOUD</span>
+                        <span class="date-location"> Apr 2021 - Nov 2024</span>
+                    </div>
+                    <span class="job-title">Software Engineer</span>
+                    <ul>
+                        <li><b>Service Scalability & Efficiency:</b> Led reliability/efficiency initiatives for
+                            high-scale service (>25M QPS), cutting database usage and throttle events by 95% amid 150%
+                            traffic growth</li>
+                        <li><b>Multi-layered defense system:</b> Launched automated data validation framework that
+                            isolates risky configuration changes within 10s; Built service outage mitigation tool used
+                            by SRE/DEV to isolate poisoned configurations and/or bad actors with mitigation SLO of <
+                                30s</li>
+                        <li><b>Data Monitoring & Compliance Enforcement:</b> Established end-to-end data integrity
+                            monitoring and automated data reconciliation; Ensured adherence to customer data access
+                            transparency, retention, and audit compliance standards</li>
+                    </ul>
+                </div>
+
+                <div class="position">
+                    <span class="job-title">Scrum Lead</span>
+                    <ul>
+                        <li><b>Agile Transformation Lead:</b> Spearheaded Agile adoption for infrastructure team (8
+                            engineers), customizing Scrum process and increasing team velocity over two years</li>
+                        <li><b>Process Optimization:</b> Drove efficiency by reducing weekly meeting time 75% (4 hrs to
+                            1 hr) within one quarter</li>
+                        <li><b>Team Enablement & Advocacy:</b> Fostered cross-functional scrum team collaboration,
+                            improved team morale (+70% happiness score), and successfully advocated for Agile alignment
+                            in OKR/performance reviews</li>
+                    </ul>
+                </div>
+
+                <div class="position">
+                    <div>
+                        <span class="company">BANK OF AMERICA</span>
+                        <span class="date-location"> Aug 2019 – Mar 2021</span>
+                    </div>
+                    <span class="job-title">Software Engineer</span>
+                    <ul>
+                        <li><b>Code optimization</b>: Increased task execution efficiency by transforming synchronous system to parallel processing
+                            system using Hazelcast</li>
+                        <li><b>NoSQL to graph database migration</b>: Increased querying and
+                            versioning efficiency by modeling arbitrary data trees as versioned graphs using Neo4j</li>
+                        <li><b>Test-driven development refinement</b>: Advocated and migrated the old testing
+                            framework to pytest, removed 50% of boilerplate codes, and improved all test coverage from 10%
+                            to 80%</li>
+                    </ul>
+                </div>
+
+                <div class="position">
+                    <div>
+                        <span class="company">BANK OF AMERICA</span>
+                        <span class="date-location"> Jun 4 - Aug 10, 2018</span>
+                    </div>
+                    <span class="job-title">Software Engineer Intern</span>
+                </div>
+
+                <div class="position">
+                    <div>
+                        <span class="company">COLLEGE</span>
+                        <span class="date-location"> Aug 2015 - May 2019</span>
+                    </div>
+                    <span class="job-title">EdTech Student Assistant & IT Help Desk</span>
+                    <ul>
+                        <li>Instructed 10+ students in bi-weekly Adobe Suites workshops; Assisted 5+ students per week
+                            in formatting their 70+ page research papers in various citation styles</li>
+                        <li>Provided Tier 1 technical support to faculty/staffs/students; Assisted art students in using
+                            the Art Studio Lab's professional hardware and software</li>
+                    </ul>
+                </div>
+
+                <div class="position">
+                    <div>
+                        <span class="company">HIGH SCHOOL</span>
+                        <span class="date-location"> Aug 2014 - May 2015</span>
+                    </div>
+                    <span class="job-title">Executive Board (Student Government Association)</span>
+                    <ul>
+                        <li>Core member of 7 to organize one to three school events each month, including an overnight trip for
+                            1,000+ students/teachers</li>
+                        <li>Planned and communicated timelines, resource allocation, and safety measurements to
+                            stakeholders (executive faculty board)</li>
+                        <li>Led groups of 10-20 student volunteers for event preparation; identified and mitigated risks
+                            during events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <!-- <div class="section">
+                <div>
+                    <span style="font-size:9pt">
+                    I have five years of experienced in cloud infrastructure security specialized in reliability of
+                    high-loading systems. During my spare time, I draw, dance, volunteer, and organize in the San Francisco salsa community.
+                    I take pride in the creative resourcefulness that stems from my interdisciplinary background,
+                    a long-term human-centered vision for the work that I deliver, and communication skills that
+                    transcend the niche scope of software engineering.
+                    For the next few years, I aim to integrate programming into my personal visual art & dancing
+                    projects, while also bringing cultural and humanistic elements into my professional work.
+                    </span>
+                </div>
+            </div> -->
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <div>
+                    <span class="company">COLLEGE</span><br>
+                    <span style="font-size:9pt">BA in Computer Science (CS) & Art Studio</span><br>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>SKILLS</h2>
+                <div class="skills-category">
+                    <h3>KEY COMPETENCIES</h3>
+                    <ul class="skills-list">
+                        <li>Problem Solving & Analysis</li>
+                        <li>System Design & Architecture</li>
+                        <li>Process Optimization</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Tech Customer Service & Communication</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>TECHNICAL</h3>
+                    <ul class="skills-list">
+                        <li>GCP • Spanner • Redis • Neo4J</li>
+                        <li>Python • C/C++ • Java • SQL</li>
+                        <li>Flask • FastAPI • OpenAPI</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>METHODOLOGIES & PRACTICES</h3>
+                    <ul class="skills-list">
+                        <li>Scrum/Agile</li>
+                        <li>Large-scale Distributed System</li>
+                        <li>Security Best Practices</li>
+                        <li>CI/CD Implementation</li>
+                        <li>Test-Driven Development</li>
+                        <li>Design thinking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>ACTIVITIES</h2>
+                <div class="activity">
+                    <span class="activity-title">RCR</span>
+                    <span class="date-location">Aug 2023 - present</span>
+                    <div class="activity-details">
+                        <p>Carnaval 2025 Youth dance teacher</p>
+                        <p>Performance dancer</p>
+                        <p>Teacher assistant</p>
+                        <p>Receptionist volunteer</p>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-title">RUEDA IN THE PARK</span>
+                    <span class="date-location">Jun 2023 - present</span>
+                    <div class="activity-details">
+                        <p>co-founder</p>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <span class="activity-title">OTHERS</span>
+                    <div class="activity-details">
+                        <p>SheCodes Mentor 2022</p>
+                        <p>LBFE volunteer 2021-2022</p>
+                        <p>Grace Hopper Scholar 2017</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
